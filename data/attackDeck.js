@@ -1,4 +1,4 @@
-var monstersDeck = [
+var attackDeck = [
   {
     type: 'multiplier',
     value: 0,
