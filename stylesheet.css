@@ -1,0 +1,396 @@
+html,
+body {
+  height: 100%;
+  font-size: 20px;
+}
+
+.container {
+  text-align: center;
+  padding: 0;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
+}
+
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.footerContainer {
+  text-align: center;
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+}
+
+button {
+  font-family: "Pirata One";
+  font-size: 25px;
+  padding: 10px;
+  margin: 0 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  backface-visibility: hidden;
+  color: white;
+  text-shadow: 1px 2px 3px black;
+  background-clip: content-box;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: #951515;
+}
+
+button:hover {
+  background: #741414;
+}
+
+.image {
+  padding: 30px 0;
+}
+
+#drawButton {
+  margin: 15px 0;
+}
+
+.highlight {
+  opacity: 0.5 !important;
+  transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+.unhighlight {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 300ms;
+}
+
+.added {
+  height: 45px;
+  width: 350px;
+  margin: 15px auto;
+  padding: 10px 0;
+  letter-spacing: 1px;
+  font-family: "Pirata One";
+  font-size: 20px;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  color: white;
+  background-clip: content-box;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hide {
+  box-shadow: none;
+  backface-visibility: hidden;
+  background: white;
+}
+
+.info {
+  color: #ffffff;
+  background-image: url("images/other/background-small.jpg");
+  opacity: 0.7;
+  font-size: 25px;
+  font-family: "Pirata One";
+  margin: 0 0 30px;
+  padding: 20px 0;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  border: 2px solid #522c2c;
+}
+
+h1 {
+  font-size: 60px;
+  padding: 10px;
+  border-bottom: 2px solid #522c2c;
+}
+
+img {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  backface-visibility: hidden;
+  font-size: 100%;
+  text-shadow: 1px 2px 3px black;
+  background-clip: content-box;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.buttons {
+  display: inline;
+  position: relative;
+}
+
+#bless-count,
+#curse-count {
+  position: absolute;
+  border-radius: 50%;
+  width: 40px;
+  height: 41px;
+  font-size: 20px;
+  bottom: 75%;
+  right: -10%;
+  border: 1px solid gray;
+  padding: 0px;
+  background: #525252;
+  opacity: 1;
+}
+
+/* MEDIA SCREEN */
+@media screen and (min-width: 0) and (max-width: 320px) {
+  .info {
+    color: #ffffff;
+    background-image: url("images/other/background-small.jpg");
+    opacity: 0.7;
+    font-size: 25px;
+    font-family: "Pirata One";
+    margin: 0 0 30px;
+    padding: 0 0;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    border-bottom: 2px solid #522c2c;
+  }
+
+  h1 {
+    font-size: 25px;
+    border-bottom: 2px solid #522c2c;
+  }
+
+  .info p {
+    /* font-family: 'Arial'; */
+    font-size: 18px;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  .added {
+    width: 80%;
+  }
+
+  .text-muted {
+    font-size: 15px;
+  }
+
+  #footer {
+    height: 60px;
+  }
+
+  .footerContainer {
+    text-align: center;
+    top: 20%;
+    position: relative;
+    transform: translateY(20%);
+  }
+
+  button,
+  .added {
+    font-size: 20px;
+  }
+
+  p {
+    margin: 0 0 5px;
+  }
+
+  .added {
+    padding: 10px 0;
+  }
+
+  button {
+    font-family: "Pirata One";
+    font-size: 20px;
+    padding: 5px;
+    margin: 0px 5%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;
+    color: white;
+    text-shadow: 1px 2px 3px black;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #951515;
+    display: inline-block;
+    width: 35%;
+  }
+
+  #bless-count, #curse-count {
+    position: absolute;
+    border-radius: 50%;
+    width: 40px;
+    height: 41px;
+    font-size: 20px;
+    bottom: 40%;
+    right: -5%;
+    border: 1px solid gray;
+    padding: 0px;
+    background: #525252;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 700px) {
+  .info {
+    color: #ffffff;
+    background-image: url("images/other/background-small.jpg");
+    opacity: 0.7;
+    font-size: 25px;
+    font-family: "Pirata One";
+    margin: 0 0 30px;
+    padding: 0 0;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    border-bottom: 2px solid #522c2c;
+  }
+
+  h1 {
+    font-size: 25px;
+    border-bottom: 2px solid #522c2c;
+  }
+
+  .info p {
+    /* font-family: 'Arial'; */
+    font-size: 18px;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  .added {
+    width: 80%;
+  }
+
+  .text-muted {
+    font-size: 15px;
+  }
+
+  #footer {
+    height: 60px;
+  }
+
+  .footerContainer {
+    text-align: center;
+    top: 20%;
+    position: relative;
+    transform: translateY(20%);
+  }
+
+  button,
+  .added {
+    font-size: 20px;
+  }
+
+  button {
+    font-family: "Pirata One";
+    font-size: 20px;
+    padding: 5px 0;
+    margin: 0px 5%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;
+    color: white;
+    text-shadow: 1px 2px 3px black;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #951515;
+    display: inline-block;
+    width: 35%;
+  }
+
+  .container {
+    width: 100% !important;
+  }
+
+  #bless-count,
+  #curse-count {
+    position: absolute;
+    border-radius: 50%;
+    width: 40px;
+    height: 41px;
+    font-size: 20px;
+    bottom: 60%;
+    right: -5%;
+    border: 1px solid gray;
+    padding: 0px;
+    background: #525252;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 800px) {
+  img {
+    width: 350px;
+  }
+
+  button {
+    font-family: "Pirata One";
+    font-size: 25px;
+    padding: 10px 0;
+    margin: 0px 5%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;
+    color: white;
+    text-shadow: 1px 2px 3px black;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #951515;
+    display: inline-block;
+    width: 35%;
+  }
+
+  .container {
+    width: 100% !important;
+  }
+
+  #bless-count,
+  #curse-count {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    bottom: 58%;
+    right: 0%;
+    border: 1px solid gray;
+    padding: 0px;
+    background: #525252;
+    opacity: 1;
+  }
+
+  .added {
+    height: 55px;
+    width: 80%;
+    font-size: 25px;
+  }
+
+  .container {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  img {
+    width: 350px;
+  }
+
+  .container {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 100% !important;
+  }
+}

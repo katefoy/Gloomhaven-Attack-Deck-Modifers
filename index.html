@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gloomhaven Attack Modifier Cards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Pirata+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="wrap">
+    <div class="container" id="media">
+      <div class="info">
+        <h1>Gloomhaven Attack Modifier Cards</h1>
+        <p>To check the attack modifier of the monsters, click on the attack card.</p>
+        <p>When you receive bless or curse cards, clicking on the buttons below will add them to your deck.</p>
+      </div>
+      <div>
+        <div class="buttons">
+          <button id="bless">Add Bless Card</button>
+          <button id="bless-count">0</button>
+        </div>
+        <div class="buttons">
+          <button id="curse">Add Curse Card</button>
+          <button id="curse-count">0</button>
+        </div>
+        <div class="added"></div>
+      </div>
+      <div id="drawButton" class="unhighlight">
+        <img alt="" id="imgClickAndChange" src="images/cards/top-small.jpg">
+      </div>
+    </div>
+    <script type="text/javascript" src="models/deck.js"></script>
+    <script type="text/javascript" src="models/card.js"></script>
+    <script type="text/javascript" src="models/multiplierCard.js"></script>
+    <script type="text/javascript" src="data/monstersDeck.js"></script>
+    <script type="text/javascript" src="data/textValues.js"></script>
+    <script type="text/javascript" src="modifierDeckView.js"></script>
+    <script type="text/javascript" src="modifierDeckController.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </div>
+
+  <div id="footer">
+    <div class="container footerContainer">
+      <p class="text-muted credit">Created for <i class="fa fa-gamepad" style="font-size:20px"></i> lovers by <a href="https://github.com/jenktam">Jen Tam</a></p>
+    </div>
+  </div>
+</body>
+</html>
