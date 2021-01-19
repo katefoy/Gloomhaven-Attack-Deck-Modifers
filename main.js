@@ -23,4 +23,4 @@ var view = new ModifierDeckView(drawButton, cardImage, blessButton, curseButton,
 
 // Create all cards from JSON file using an AJAX call
 // separate to cardLoader Controller in the future
-var modifierDeckController = new modifierDeckController(monstersDeck, view);
+var modifierDeckController = new modifierDeckController(attackDeck, view);
